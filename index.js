@@ -1,28 +1,43 @@
+let prompt = require("prompt-sync")
 // ARRAY SECTION
 // Task 1: Create an empty array called playlist
-
+let playlist = []
 
 // Task 2: Push 3 songs to the playlist array
-
+playlist.push("Sunflower")
+playlist.push("I'd Rather Lie")
+playlist.push("River Flows In You")
 
 // Task 3: Update the value of the last element to be "Test"
+playlist[2] = "Test"
 
 
 // Task 4: Delete the "Test" element 
+playlist.pop()
 
 // Console log the array
-
+console.log(playlist)
 
 // Commit your changes with an appropriate message.
 // ----------------------------------
 // OBJECTS SECTION
 // Task 5: Create an object called 'song' with 'title', 'artist', and 'duration' properties
 
+let song = {
+    title: "Dann Ko",
+    artist: "Youssoun'Dour",
+    duration: "4:36"
+}
+
 
 // Task 6: Add a property 'listenedTo' to the 'song' object and set it to false
 
+song["listenedTo"] = false
+
 
 // Task 7: Delete the 'artist' property
+
+delete song.artist
 
 
 // Commit your changes with an appropriate message.
@@ -30,14 +45,25 @@
 // NESTED ARRAYS & OBJECTS SECTION
 // Task 8: Create an object called 'album' with properties song's album's 'name', 'year', and 'songs' (leave 'songs' as empty array for now)
 
+let album = {
+    name: "I Am Music",
+    year: 2025,
+    songs:[]
+}
+
 
 // Task 9: Add your song object (task 5) to the empty songs array in the album object
+album.songs.push(song)
 
 
 // Console log the length of the album's songs array to confirm it worked
 
+console.log(album.songs.length())
+
 // Task 10: Update the title of the song to be all lowercase. 
 // Console log the album object to check your change
+
+album.songs[0].toLowerCase()
 
 
 // Commit your changes with an appropriate message.
