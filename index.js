@@ -1,4 +1,3 @@
-let prompt = require("prompt-sync")
 // ARRAY SECTION
 // Task 1: Create an empty array called playlist
 let playlist = []
@@ -70,6 +69,7 @@ album.songs[0].toLowerCase()
 // ----------------------------------
 // EXTRA CREDIT
 // Use prompt-sync to prompt the user to enter the title, artist, and duration
+let theName = prompt("Enter A Name")
 
 // Use the user info to create a new song object
 
